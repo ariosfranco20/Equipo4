@@ -1,2 +1,0 @@
-primera ByteLengthQueuingStrategy
-segunda ByteLengthQueuingStrategy
