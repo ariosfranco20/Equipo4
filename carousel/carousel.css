@@ -42,7 +42,46 @@ body {
   margin-left: .75rem;
 }
 /* rtl:end:ignore */
-
+#ContainerInfo{
+  width: 100%;
+  height: 300px;
+  
+  padding-top: 5px;
+  background: #cc901f;
+  text-align: center;
+  color: white;
+}
+.InfoApp{
+  width: 33%;
+  height: 80%;
+  margin-right: 2px;
+  margin-left: 2px;
+  float: left;
+  background:#cc901f;
+}
+.Icon{
+  width: 30%;
+  height: 90%;
+  padding-top: 10%;
+  font-size: 100px;
+  background: #cc901f;
+  float: left;
+}
+.Info{
+  width: 70%;
+  height: 90%;
+  padding-left: 1%;
+  padding-right: 1%;
+  background: #cc901f;
+  float: left;
+}
+.Info h1{
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+.Info p {
+  padding: 0 5%;
+}
 
 /* Featurettes
 ------------------------- */
@@ -56,7 +95,64 @@ body {
 .featurette-heading {
   letter-spacing: -.05rem;
 }
-
+/*Footer*/
+.pie-pagina{
+  width: 100%;
+  margin-top: 2em;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: rgb(0, 89, 255);
+}
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
 /* rtl:end:remove */
 
 /* RESPONSIVE CSS
@@ -79,4 +175,12 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+}
+.Centrado{
+  width: 500px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #fff;
+  
 }
