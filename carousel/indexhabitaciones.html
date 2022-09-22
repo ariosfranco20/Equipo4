@@ -1,16 +1,17 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.101.0">
-    <title>Diconnect Hotel </title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
-    <script src="https://kit.fontawesome.com/6367ec265e.js" crossorigin="anonymous"></script>
+    <title>Features · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/features/">
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
+    <!--SCRIPT PARA LOS SIMBOLOS DE LAS REDES SOCIALES-->
+    <script src="https://kit.fontawesome.com/6367ec265e.js" crossorigin="anonymous"></script>
 
     <style>
       .bd-placeholder-img {
@@ -63,23 +64,20 @@
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
       }
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 500,
-  'wght' 700,
-  'hight' 500,
-  'GRAD' 200,
-  'opsz' 48
-}
     </style>
+
+    
     <!-- Custom styles for this template -->
-    <link href="carousel.css" rel="stylesheet">
+    <link href="Css/features.css" rel="stylesheet">
     <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <!--conexion a archivo css Estilo calendario-->
     <link href="Css/dropdowns.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
+      <!--Barra de navegacion-->
       <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Disconnect Hotel</a>
@@ -122,55 +120,19 @@
         </div>
       </nav>
     </header>
-    <!--seccion del contendor naranja con las fotografias-->
-    <main>
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-    <div class="carousel-inner">
+    <br>
+    <br>
+
+<main>
+   <!--Separador sapote entre la barra de navegacion y la seccion seleccione habitacion-->
+   <div class="carousel-inner">
       <div class="carousel-item active">
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#F58024"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <a><img src="assets/piscinaprincipal.jpg" alt="esta es la imagen"></a>
-          </div>
-        </div>
       </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#F58024"/></svg>
-        <div class="container">
-          <div class="carousel-caption">
-            <a><img src="assets/interior.jpg" alt="esta es la imagen"></a>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#F58024"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption">
-            <a><img src="assets/areacomun.jpg" alt="esta es la imagen"></a>
-          </div>
-        </div>
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-
     </div>
 
-    <!--Barra de busqueda de disponibilidad-->
-    <div class="container px-4 py-1">
-    <h2 class="pb-2 border-bottom"></h2>
+  <div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">Reserve su habitacion</h2>
 
     <div class="row container align-items-md-center">
       <div class="col">
@@ -365,10 +327,13 @@
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body"><input type="int" name="" id="" placeholder="Numero de personas" maxlength="10"></div>
+                <div class="accordion-body"><input type="int" name="" id="" placeholder="Digite numero de personas" maxlength="10"></div>
               </div>
             </div>
           </div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="indexhabitaciones.html">Disconnect suite</a></li>
+          </ul>
         </ul>
       </div>
       <div class="col">
@@ -380,205 +345,131 @@
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body"><input type="int" name="" id="" placeholder="Numero de habitaciones" maxlength="10"></div>
+              <div class="accordion-body"><input type="int" name="" id="" placeholder="Escriba su nombre" maxlength="10"></div>
             </div>
           </div>
         </div>
       </div>
-
       <div class="col">
         <div class="container">
             <p><a class="btn btn-lg btn-primary" href="#">Buscar</a></p>
           </div>
       </div>
-   </div>
-  </div>
-  
-  <!--Seccion de iconos rapidos---------->
-  <div class="container px-4 py-5">
-  
- <div class="row container align-items-md-center">
-  <div class="col">
-  <div class="card text-center container px-4 py-1" style="width: 19rem;">
-    <div class="card-body">
-      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
-        <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
-        <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
-      </svg>
-      <p class="card-text">Wifi</p>
     </div>
-  </div>
-</div>
-<div class="col">
-  <div class="card text-center container px-4 py-1" style="width: 19rem;">
-    <div class="card-body">
-      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-p-square-fill" viewBox="0 0 16 16">
-        <path d="M8.27 8.074c.893 0 1.419-.545 1.419-1.488s-.526-1.482-1.42-1.482H6.778v2.97H8.27Z"/>
-        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm3.5 4.002h2.962C10.045 4.002 11 5.104 11 6.586c0 1.494-.967 2.578-2.55 2.578H6.784V12H5.5V4.002Z"/>
-      </svg>
-      <p class="card-text">Parqueadero gratis</p>
-    </div>
-  </div>
-</div>
-<div class="col">
-  <div class="card text-center container px-4 py-1" style="width: 19rem;">
-    <div class="card-body">
-      <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
-        <path d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"/>
-        <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"/>
-      </svg>
-      <p class="card-text">Recepcion 24 horas</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
 
-
-
-  <!-- Seccion de emoticones rapidos-->
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/cama.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+          
+          <a href="formreserva.html" class="btn btn-primary btn-lg">Reservar</a>
+        </div>
+        
+      </div>
       
-      <!--<div id="ContainerInfo">
-      <div class="InfoApp">
-      <div class="Icon">
-          <i class="fa-solid fa-mobile-screen-button"></i>
-      </div>
-      <div class="Info">
-          <h1>App</h1>
-          <p>Descarga Nuestra App y accede a promociones imperdibles</p>
-      </div>
-      </div>
-      <div class="InfoApp">
-      <div class="Icon">
-          <i class="fa-solid fa-wifi"></i>
-      </div>
-      <div class="Info">
-          <h1>WIFI</h1>
-          <p>Descarga Nuestra App y accede a promociones imperdibles</p>
-      </div>
-      </div>
-      <div class="InfoApp">
-      <div class="Icon">
-      <i class="fa-solid fa-mask-face"></i>
-      </div>
-      <div class="Info">
-      <h1>Bioseguridad</h1>
-      <p>Descarga Nuestra App y accede a promociones imperdibles</p>
-      </div>
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-      </button>
-      </div>-->
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <!--Seccion de servicios-->
-      <div class="row">
-      <div class="col-lg-4">
-        <img src="assets/restaurante.jpg" alt="esta es la imagen">
-        <h2 class="fw-normal">Restaurante</h2>
-        <p>Disfrute de la gastronomia tipica de la region.</p>
-        <p><a class="btn btn-secondary" href="indexservicios.html">Ver detalles &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="assets/salondeeventos.jpg" alt="esta es la imagen">
-        <h2 class="fw-normal">Salon de eventos</h2>
-        <p>Realice aqui sus conferencias y encuentros empresariales. Capacidad para 500 personas</p>
-        <p><a class="btn btn-secondary" href="indexservicios.html">Ver detalles &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img src="assets/spa.jpg" alt="esta es la imagen">
-        <h2 class="fw-normal">Spa</h2>
-        <p>Relajese y consienta su cuerpo con los servicios que presta nuestro Spa</p>
-        <p><a class="btn btn-secondary" href="indexservicios.html">Ver detalles &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <!--Seccion de las fotos de habitaciones-->
-
-      <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Disconnect suite. <span class="text-muted">Jacuzzi privado</span></h2>
-        <p class="lead">Desconecte en el Jacuzzi y diafrute de este confort con el cual cuentan todas las habitaciones de nuestro hotel</p>
-        <a href="indexhabitaciones.html" class="btn btn-primary btn-lg">Reservar</a>
-      </div>
-      <div class="col-md-5">
-        <a><img src="assets/privadojacuzzi.jpg" alt="esta es la imagen"></a>
-      </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Disconnect suite. <span class="text-muted">Camas superking ortopedicas</span></h2>
-        <p class="lead">Desconectese en nuestras camas superkin ortopedicas y obtenga un descanso placentero </p>
-        <a href="indexhabitaciones.html" class="btn btn-primary btn-lg">Reservar</a>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <a><img src="assets/camas.jpg" alt="esta es la imagen"></a>
-      </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-      </div><!-- /.container -->
-    </main>
-    <!-- FOOTER -->
-    <div class="Indicador_contenedor">
-      <div class="Indicador_scroll"></div>
-    </div>
-    <div id="Ir_arriba_boton" class="Ocultar">
-        <i class="fa fa-angle-up fa-4x"></i>
-    </div>
-    <footer class="pie-pagina">
-      <div class="grupo-1">
-        <div class="box">
-          <figure>
-            <a href="#">
-              <img src="assets/Ejemplo1.jpg" alt="Logo Cineland">
-            </a>
-          </figure>
-        </div>
-        <div class="box">
-          <h2>SOBRE NOSOTROS</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
-        </div>
-        <div class="box">
-          <h2>SIGUENOS</h2>
-          <div class="red-social">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube"></a>
+      
+      <div class="row row-cols-1 row-cols-sm-2 g-4">
+        <div class="d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#collection" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+              <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+            </svg>
           </div>
+          <h4 class="fw-semibold mb-0">Capacidad para 4 personas</h4>
+          <p class="text-muted">Cada habitacion cuenta con dos camas dobles superking</p>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#gear-fill" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-water" viewBox="0 0 16 16">
+              <path d="M.036 3.314a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 3.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 6.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0L.314 9.964a.5.5 0 0 1-.278-.65zm0 3a.5.5 0 0 1 .65-.278l1.757.703a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.014-.406a2.5 2.5 0 0 1 1.857 0l1.015.406a1.5 1.5 0 0 0 1.114 0l1.757-.703a.5.5 0 1 1 .372.928l-1.758.703a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.014-.406a1.5 1.5 0 0 0-1.114 0l-1.015.406a2.5 2.5 0 0 1-1.857 0l-1.757-.703a.5.5 0 0 1-.278-.65z"/>
+            </svg>
+          </div>
+          <h4 class="fw-semibold mb-0">Jacuzzi privado</h4>
+          <p class="text-muted">Disfrute de este confort que le permitira desconectarse</p>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#speedometer" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+              <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+              <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+            </svg>
+          </div>
+          <h4 class="fw-semibold mb-0">Wifi</h4>
+          <p class="text-muted">Servicio de wifi gratuito</p>
+        </div>
+
+        <div class="d-flex flex-column gap-2">
+          <div
+            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            <svg class="bi" width="1em" height="1em">
+              <use xlink:href="#table" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+              <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+            </svg>
+            
+          </div>
+          <h4 class="fw-semibold mb-0">100.000 COP</h4>
+          <p class="text-muted">Por noche. Impuestos y tasas incluidas</p>
         </div>
       </div>
-      <div class="grupo-2">
-        <small>&copy; 2022 <b>EQUIPO 4</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </div>
+</main>
+
+<div class="Indicador_contenedor">
+  <div class="Indicador_scroll"></div>
+</div>
+<div id="Ir_arriba_boton" class="Ocultar">
+    <i class="fa fa-angle-up fa-4x"></i>
+</div>
+<footer class="pie-pagina">
+  <div class="grupo-1">
+    <div class="box">
+      <figure>
+        <a href="#">
+          <img src="assets/Ejemplo1.jpg" alt="Logo Cineland">
+        </a>
+      </figure>
+    </div>
+    <div class="box">
+      <h2>SOBRE NOSOTROS</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+    </div>
+    <div class="box">
+      <h2>SIGUENOS</h2>
+      <div class="red-social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
       </div>
-    </footer>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/gotop.js"></script>
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </div>
+  <div class="grupo-2">
+    <small>&copy; 2022 <b>EQUIPO 4</b> - Todos los Derechos Reservados.</small>
+  </div>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/gotop.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
   </body>
 </html>

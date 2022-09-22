@@ -4,7 +4,7 @@
 
 body {
   padding-top: 3rem;
-  color: #5a5a5a;
+  color: #161615;
 }
 
 
@@ -23,7 +23,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 30rem;
 }
 
 

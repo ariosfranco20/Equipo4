@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Features · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/features/">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--SCRIPT PARA LOS SIMBOLOS DE LAS REDES SOCIALES-->
+    <script src="https://kit.fontawesome.com/6367ec265e.js" crossorigin="anonymous"></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="Css/features.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <!--conexion a archivo css Estilo calendario-->
+    <link href="Css/modals.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <!--Barra de navegacion-->
+      <nav class="navbar navbar-expand-md navbar-white fixed-top bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Disconnect Hotel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inicio
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="indexnosotros.html">Sobre nosotros</li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Hotel
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="indexservicios.html">Servicios</a></li>
+                  <li><a class="dropdown-item" href="#">Ocio-Mapa Turistico</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Habitaciones
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="indexhabitaciones.html">Disconnect suite</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <a class="btn btn-outline-danger" role="button" aria-disabled="true" href="indexiniciosesion.html">Iniciar sesion</a>
+              <a class="btn btn-outline-danger" role="button" aria-disabled="true" href="indexregistro.html">Registrarse</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br>
+    <br>
+
+<main>
+   <!--Separador naranja entre la barra de navegacion y la seccion seleccione habitacion-->
+   <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#F58024"/></svg>
+      </div>
+    </div>
+
+    <!--Logos de redes sociales-->
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      
+        <symbol id="google" viewBox="0 0 16 16">
+            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+        </symbol>
+      
+        <symbol id="twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </symbol>
+      
+        <symbol id="facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </symbol>
+      </svg>
+      
+      <!--Formulario de registro-->
+
+    <div class="modal modal-signin position-static d-block bg-ligth py-5" tabindex="-1" role="dialog" id="modalSignin">
+        <!--Contenedor del form de registro-->
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <!-- <h5 class="modal-title">Modal title</h5> -->
+              <h2 class="fw-bold mb-0">Iniciar sesion</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+      
+            <div class="modal-body p-5 pt-0">
+              <form class="">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Correo electronico</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Contraseña</label>
+                </div>
+                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Iniciar sesion</button>
+                <div class="container text-center">
+                <small class="text-center btn-link" href="">¿Ha olvidado su contraseña?</small>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</main>
+
+<div class="Indicador_contenedor">
+  <div class="Indicador_scroll"></div>
+</div>
+<div id="Ir_arriba_boton" class="Ocultar">
+    <i class="fa fa-angle-up fa-4x"></i>
+</div>
+<footer class="pie-pagina">
+  <div class="grupo-1">
+    <div class="box">
+      <figure>
+        <a href="#">
+          <img src="assets/Ejemplo1.jpg" alt="Logo Cineland">
+        </a>
+      </figure>
+    </div>
+    <div class="box">
+      <h2>SOBRE NOSOTROS</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+    </div>
+    <div class="box">
+      <h2>SIGUENOS</h2>
+      <div class="red-social">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+    </div>
+  </div>
+  <div class="grupo-2">
+    <small>&copy; 2022 <b>EQUIPO 4</b> - Todos los Derechos Reservados.</small>
+  </div>
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/gotop.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+      
+  </body>
+</html>

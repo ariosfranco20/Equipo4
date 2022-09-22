@@ -4,7 +4,7 @@
 
 body {
   padding-top: 3rem;
-  color: #5a5a5a;
+  color: #1a0c01;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -16,13 +16,13 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 0rem;
   z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 30rem;
 }
 
 
