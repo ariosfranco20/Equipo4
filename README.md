@@ -1,5 +1,5 @@
 # PROYECTO FRONTEND DE LA PAGINA WEB DE UN HOTEL, PARA ADMINISTRAR RESERVAS, CALIFICACIONES Y CLIENTES
-This project uses Python 3.6.
+This project uses HTML, CSS, JavaSript, Bootstrap
 
 ## Dependencies
 To install the required dependencies, please follow these steps:
